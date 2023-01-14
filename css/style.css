@@ -1,0 +1,350 @@
+:root {
+  --Pink: hsl(322, 100%, 66%);
+  --Light-Pink: hsl(321, 100%, 78%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --Very-Dark-Cyan: hsl(192, 100%, 9%);
+  --Very-Pale-Blue: hsl(207, 100%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin: auto;
+}
+
+@media (min-width:1300px) {
+  .container {
+    width: 1300px;
+  }
+}
+
+@media (max-width:1299px) {
+  .container {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+}
+
+header {
+  padding: 50px 0px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: var(--Light-Pink);
+  border-radius: 43px;
+  border: 2px solid var(--Light-Pink);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+@media (max-width:1299px) {
+  header .container .logo {
+    width: 30%;
+  }
+
+  header .container .logo img {
+    width: 100%;
+  }
+}
+
+
+
+.landing .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.landing .container .text {
+  text-align: center;
+}
+
+.landing .container .text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  color: var(--Very-Dark-Cyan);
+  font-family: "Poppins", sans-serif;
+}
+
+@media (max-width:1299px) {
+  .landing .container .text h1 {
+    font-size: 1.75rem;
+    width: 20ch;
+    margin: auto;
+  }
+}
+
+.landing .container .text p {
+  font-size: 1.1rem;
+  width: 52ch;
+  margin: auto;
+  color: var(--Very-Dark-Cyan);
+}
+
+@media (max-width:1299px) {
+  .landing .container .text p {
+    width: 39ch;
+    font-size: 1rem;
+  }
+}
+
+.get-started {
+  display: inline-block;
+  padding: 20px 40px;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--Pink);
+  color: white;
+  border-radius: 35px;
+  margin-top: 35px;
+  box-shadow: 0px 5px 15px -5px var(--Very-Dark-Cyan);
+}
+
+
+.landing .container .illustration img {
+  width: 100%;
+}
+
+.stats {
+  margin: 50px 0px;
+}
+
+.stats .container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+@media (max-width:1299px) {
+  .stats .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+.stats .container .stat img {
+  display: block;
+}
+
+.stats .container .stat span {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--Very-Dark-Cyan);
+}
+
+.stats .container .stat p {
+  font-weight: 600;
+  color: var(--Very-Dark-Cyan);
+}
+
+@media (max-width:1299px) {
+  .stats .container .stat p {
+    text-align: center;
+  }
+}
+
+.insights .insight .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+@media (max-width:1299px) {
+  .insights .insight .container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.insights .insight:first-of-type,
+.insights .insight:last-of-type {
+  background-color: hsl(207deg 100% 98%);
+  background-position: top center, bottom center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 250px 0px;
+}
+
+
+
+
+.insights .insight:first-of-type {
+  background-image: url(../images/bg-section-bottom-desktop-1.svg), url(../images/bg-section-top-desktop-1.svg);
+}
+
+@media (max-width:1299px) {
+  .insights .insight:first-of-type {
+    background-image: url(../images/bg-section-bottom-mobile-1.svg), url(../images/bg-section-top-mobile-1.svg);
+  }
+}
+
+.insights .insight:nth-of-type(2) .text {
+  order: 1;
+
+}
+
+@media (max-width:1299px) {
+  .insights .insight .text {
+    order: 1;
+  }
+}
+
+.insights .insight:last-of-type {
+  background-image: url(../images/bg-section-bottom-desktop-2.svg), url(../images/bg-section-top-desktop-2.svg);
+}
+
+@media (max-width:1299px) {
+  .insights .insight:last-of-type {
+    background-image: url(../images/bg-section-bottom-mobile-2.svg), url(../images/bg-section-top-mobile-2.svg);
+  }
+}
+
+.insights .insight .container h2 {
+  font-size: 2.5rem;
+  color: var(--Very-Dark-Cyan);
+}
+
+@media (max-width:1299px) {
+  .insights .insight .container h2 {
+    font-size: 1.5rem;
+
+  }
+}
+
+.insights .insight .container p {
+  margin-top: 15px;
+  line-height: 1.6;
+  width: 54ch;
+  color: var(--Very-Dark-Cyan);
+}
+
+@media (max-width:1299px) {
+  .insights .insight .container p {
+    width: 40ch;
+  }
+}
+
+.insights .insight .container .illustration img {
+  width: 100%;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 250px;
+}
+
+.call-to-action h2 {
+  text-align: center;
+}
+
+footer {
+  background-image: url(../images/bg-footer-top-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 160px 0px;
+  color: var(--Very-Pale-Blue);
+  background-color: #00252e;
+}
+
+@media (max-width:1299px) {
+  footer {
+    background-image: url(../images/bg-footer-top-mobile.svg);
+  }
+}
+
+footer .container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+}
+
+@media (max-width:1299px) {
+  footer .container {
+    flex-direction: column;
+    gap: 50px;
+
+  }
+}
+
+
+footer .container section:first-of-type h2 {
+  margin-bottom: 15px;
+}
+
+footer .container section:first-of-type p {
+  width: 41ch;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+@media (max-width:1299px) {
+  footer .container section:first-of-type p {
+    width: 39ch;
+  }
+}
+
+
+footer .container section:first-of-type form input {
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+
+footer .container section:first-of-type form input:first-of-type {
+  margin-right: 20px;
+}
+
+footer .container section:first-of-type form input:last-of-type {
+  color: white;
+  background-color: var(--Pink);
+  margin-top: 20px;
+
+}
+
+footer .container section:last-of-type .logo img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(222deg) brightness(104%) contrast(102%);
+}
+
+footer .container section:last-of-type .first {
+  margin: 15px 0px;
+  width: 40ch;
+  line-height: 1.6;
+}
+
+footer .container section:last-of-type .phone,
+footer .container section:last-of-type .email {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+footer .social-media a {
+  color: white;
+  font-size: 40px;
+  margin-right: 10px;
+}
